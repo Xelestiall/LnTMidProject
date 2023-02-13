@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Axel Christopher" content="PT Meksiko">
+        <meta description="PT Meksiko" content="Web Development PT Meksiko, softwarehouse">
+        <link rel="stylesheet" href="style.css">
+        <title>Website Portofolio</title>
+    </head>
+    <body>
+        <nav class="navigation-bar">
+            <ul class="menu-navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutMe">About Me</a></li>
+                <li><a href="index.html#portofolio">Portofolio</a>
+                    <ul class="portoAing">
+                        <li><a href="index.html#mediaCare">Mediacare Healthcare</a></li>
+                        <li><a href="index.html#AOT">Attack On Titan</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <!-- Welcome to Porto -->
+        <section class="tentangKu-size">
+        <section class="judul">
+            <h1>Welcome to Portofolio,<span>Axel</span></h1>
+        </section>
+            <section class="tentangKu" id="aboutMe">
+                <!-- About Me -->
+                <h1>About Me</h1>
+                <div class="img-container">
+                    <img src="assets/Pas Foto BINUS.jpg" width="300px" alt="Pas Foto Axel Christopher">
+                </div>
+                <h2>Undergraduate Information Systems Student</h2>
+                <p>Greetings. My name is Axel. I was born in Jakarta, 24 Mei 2004, and currently I'm studying at BINUS UNIVERSITY as an undergradute Information Systems Student on 2nd Semester. I'm a huge fan of esports, specially MOBA genre, really like to play mobile games and music. Currently I already join BNCC and BDM Student Organization on BINUS UNIVERSITY.</p>
+                <p> I'm a fast - adaptive person in an environment & professionalism is something that reflects myself. I'm very open to any great opportunity to increase my skills, experience, and connection. Below is a table contain my educational track record:</p>
+                <!-- Table -->
+                <div class="table-container">
+                <table class="tablEd">
+                    <thead>
+                        <tr>
+                            <th>Education time-period</th>
+                            <th>Education Entity</th>
+                            <th>Education Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2010 - 2012</td>
+                            <td>Talenta English Course</td>
+                            <td>Non-formal education</td>
+                        </tr>
+                        <tr>
+                            <td>2013 - 2015</td>
+                            <td>Royal Music Studio</td>
+                            <td>Non-formal education</td>
+                        </tr>
+                        <tr>
+                            <td>2016 - 2019</td>
+                            <td>SMP Santo Yakobus</td>
+                            <td>Formal education</td>
+                        </tr>
+                        <tr>
+                            <td>2019 - 2022</td>
+                            <td>SMA Negeri 21 Jakarta</td>
+                            <td>Formal education</td>
+                        </tr>
+                        <tr>
+                            <td>2022 - Present</td>
+                            <td>BINUS UNIVERSITY</td>
+                            <td>Formal education</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </section>
+        </section>
+        <section class="skills-size">
+                <!-- Skillset -->
+                <section class="skills">
+                    <p>Currently,there are some software and applications that I'd try and experience it:</p>
+                        <ol class="softwareList">
+                            <li>Visual Studio Code</li>
+                            <li>Eclipse IDE</li>
+                            <li>Visual Paradigm</li>
+                            <li>App diagram (<a href="https://app.diagrams.net/" target="_blank">Click Me!</a>)</li>
+                        </ol>
+                    <p>Besides software & application above, Here are some of programming language that i learned and accomplished:</p>
+                        <ul>
+                            <li>C</li>
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                </section>
+        </section>
+        <section class="portoKu-size" id="portofolio">
+            <section class="portoKu">
+                <h1>Portofolio</h1>
+                <p>Here are a couple of projects that i've done:</p>
+                <p id="mediaCare">1. Mediacare Healthcare</p>
+                <div class="porto1">
+                    <img src="assets/MediCare.png" alt="Mediacare Healthcare">
+                </div>
+                <a href="Assignment Answer.zip" download='Mediacare Healthcare' class="download-btn">Download File
+                    <i class="fa fa-download"></i>
+                </a>
+                <p id="AOT">2. Attack on Titan</p>
+                <div class="porto1">
+                    <img src="assets/AOT.png" alt="Attack On Titan HomePage">
+                </div>
+                <a href="[Axel]_Front-EndDev.zip" download='Attack On Titan' class="download-btn">Download File
+                    <i class="fa fa-download"></i>
+                </a>
+            </section>
+        </section>
+        <section class="kontakAja" id="contact">
+            <section class="hubAja">
+                <h1>Contact <span>Me</span></h1>
+                <form action="https://member.bncc.net/" method="post" id="form" target="_blank">
+                    <div class="nama">
+                        <label for="fullName">Name</label> <br>
+                        <input type="text" placeholder="Please input your full name" id="fullName" autocomplete="off">
+                    </div>
+                    <div class="gmail-address">
+                        <label for="email">Email : </label> <br> 
+                        <input type="email" placeholder="****@gmail.com" id="email" autocomplete="off">
+                    </div>
+                    <div class="linkedIn">
+                        <label for="linkedIn">LinkedIn : </label> <br>
+                        <input type="text" placeholder="Please input your LinkedIn URL here" id="linkedIn" autocomplete="off">
+                    </div>
+                    <div class="komentar">
+                        <label for="comment">Comment : </label> <br>
+                        <textarea id="comment" rows="4" placeholder="Please leave your comment to improve our UX and WebDev,
+Appreciate any input from you guys, thanks!"></textarea>
+                    </div>
+                    <div class="error-notif" id="error"></div>
+                    <div class="reset-submit">
+                        <button type="submit">Register</button>
+                        <button type="reset">Clear & reset</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </body>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ca8cef09e9.js" crossorigin="anonymous"></script>
+</html>

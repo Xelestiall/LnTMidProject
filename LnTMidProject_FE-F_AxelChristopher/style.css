@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Table */
+table, thead, tbody, th, td, tr{
+    border-collapse: collapse;
+    border: 2px solid black;
+    background-color: white;
+}
+th, tr, td {
+    padding: 1vh 1vw;
+    text-align: center;
+  }
+th{
+    color: rgb(8, 0, 255);
+}
+td{
+    color: rgb(0, 179, 255);
+}
+/* Navigation Bar */
+.navigation-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5vh;
+    height: 8vh;
+    width: 100vw;
+    background-color: rgb(0, 179, 255);
+    box-shadow:  0 0 16px silver;
+}
+.menu-navbar{
+    display: flex;
+    justify-content: center;
+}
+.menu-navbar li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 2rem;
+}
+.menu-navbar li a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+.menu-navbar li a:hover{
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+}
+.portoAing{
+    display: none;
+}
+.portoAing li{
+    padding: 0.2rem 0;
+}
+.menu-navbar li:hover .portoAing{
+    display: block;
+    position: absolute;
+    padding: 1.5vh 2vw;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(0, 179, 255);
+    border-radius: 4px;
+    text-align: center;
+
+}
+.menu-navbar li:hover .portoAing li a{
+    display: block;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.menu-navbar li:hover .portoAing li a:hover{
+    color: rgb(0, 0, 0);
+}
+/* Judul */
+.judul{
+    height: 10vh;
+    width: 100vw;
+}
+.judul h1{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    animation-name: ideka;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes ideka {
+    from {color: aquamarine;}
+    to {color: rgb(0, 255, 229);}
+  }
+.judul h1 span{
+    display: flex;
+    justify-content: center;
+    color: rgb(8, 0, 255);
+    font-size: 48px;
+    margin-left: 10px;
+    animation-name: ideka2;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes ideka2{
+from {color: rgb(0, 255, 229)}
+to {color: blue;}
+}
+/* About Me */
+.table-container{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 0;
+}
+.tentangKu-size{
+    padding: 1vh 0;
+    width: 100vw;
+    height: 135vh;
+    background-image: url(assets/AboutMeWall.jpg);
+    background-size: cover;
+    animation: change 12s infinite ease-in-out;
+}
+@keyframes change{
+    0%{background-image: url(assets/AboutMeWall.jpg);}
+    33%{background-image: url(assets/AboutMeWall3.jpg);}
+    66%{background-image: url(assets/AboutMeWall2.jpg);}
+    100%{background-image: url(assets/AboutMeWall4.jpg);}
+}
+.tentangKu{
+    margin: 0vh 5vw;
+    width: 90vw;
+    height: 100vh;
+}
+.tentangKu h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.tentangKu .img-container{
+    display: flex;
+    justify-content: center;
+    padding: 1.5vh 0;
+}
+.tentangKu h2{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding: 1.5vh 0;
+}
+.tentangKu p{
+    font-size: 18px;
+    padding: 1vh 0;
+}
+/* Skills */
+.skills-size{
+    width: 100vw;
+    height: 42.5vh;
+    padding-top: 1.5vh;
+    background-image: url(assets/SkillsWall.jpg);
+    background-size: cover;
+}
+.skills{
+    width: 90vw;
+    padding: 0 5vw;
+}
+.skills p{
+    font-size: 18px;
+    padding: 1vh 0;
+    color: chocolate;
+    font-weight: bolder;
+}
+.skills ol li,.skills ul li {
+    font-size: 18px;
+    color: burlywood;
+    font-weight: bolder;
+}
+.skills ol li a,.skills ul li a {
+    font-size: 18px;
+    color: burlywood;
+    text-decoration: none;
+}
+/* Contact */
+.kontakAja{
+    display: flex;
+    max-width: 100%;
+    animation-name: forward;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.hubAja{
+    height: 80vh;
+    width: 100vw;
+    margin: 0 2vw;
+}
+@keyframes forward {
+    0%   {}
+    25%  {background-color:rgb(251, 178, 255);}
+    50%  {background-color:rgb(205, 248, 255);}
+    75%  {background-color:rgb(117, 255, 117);}
+    100% {background-color:rgb(211, 175, 255);}
+}
+.hubAja h1{
+    font-size: 48px;
+    text-align: center;
+    margin: 5px;
+    color: rgb(8, 0, 255);
+}
+.hubAja h1 span{
+    color: rgb(0, 179, 255);
+}
+form{
+    margin: 1vh 2.5vw;
+    position: absolute;
+    width: 90vw;
+}
+form div{
+    margin: 1.5vh 0;
+    font-size: 18px;
+    color: black;
+}
+form input{
+    margin: 1vh 0;
+    padding: 10px 5px 10px 5px;
+    font-size: 18px;
+    width: 100%;
+}
+.komentar textarea{
+    width: 50%;
+    max-width: 100%;
+    font-size: 18px;
+    padding: 10px 5px 10px 5px
+}
+.reset-submit button{
+    padding: 12px;
+    font-size: 18px;
+    margin: 0 1vw 0 1vw ;
+    border-radius: 12px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 179, 255);
+    border-color:rgb(0, 179, 255);
+    box-shadow: 0 0 16px silver;
+}
+.reset-submit button:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(0, 179, 255);
+}
+.error-notif{
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Portofolio */
+.portoKu-size{
+    width: 100vw;
+    height: 182.5vh;
+}
+.portoKu{
+    width: 90vw;
+    margin: 0 5vw;
+}
+.download-btn{
+    background-color: DodgerBlue;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius:12px;
+}
+.download-btn:hover {
+    background-color: RoyalBlue;
+}
+.portoKu h1{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    padding: 1vh;
+
+}
+.portoKu p{
+    font-size: 18px;
+    padding: 1vh 0;
+}
+.portoKu .porto1{
+    display: flex;
+    justify-content: center;
+}
+.portoKu .porto1 img{
+    padding: 1vh 0;
+    width: 75%;
+}
+.portoKu a{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 0;
+}
