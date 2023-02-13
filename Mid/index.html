@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Axel Christopher" content="PT Meksiko">
+        <meta description="PT Meksiko" content="Web Development PT Meksiko, softwarehouse">
+        <link rel="stylesheet" href="style.css">
+        <title>Website Portofolio</title>
+    </head>
+    <body>
+        <nav class="navigation-bar">
+            <ul class="menu-navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutMe">About Me</a></li>
+                <li><a href="">Portofolio</a>
+                    <ul class="portoAing">
+                        <li><a href="">MediaCare</a></li>
+                        <li><a href="">Attack On Titan</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Welcome to Porto -->
+        <section class="judul">
+            <h1>Welcome to Portofolio,<span>Axel</span></h1>
+        </section>
+        <section class="tentangKu-size">
+            <section class="tentangKu" id="aboutMe">
+                <!-- About Me -->
+                <h1>About Me</h1>
+                <div class="img-container">
+                    <img src="assets/Pas Foto BINUS.jpg" width="300px" alt="Pas Foto Axel Christopher">
+                </div>
+                <h2>Undergraduate Information Systems Student</h2>
+                <p>Greetings. My name is Axel. I'm a fast - adaptive person in an environment & professionalism is something that reflects myself. I'm very open to any great opportunity to increase my skills, experience, and connection.</p>
+                <!-- Table -->
+                <table class="tablEd" border="2px">
+                    <thead>
+                        <tr>
+                            <td>Masa Pendidikan</td>
+                            <td>Tempat Pendidikan</td>
+                            <td>Deskripsi Pendidikan</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2016 - 2019</td>
+                            <td>SMP Santo Yakobus</td>
+                            <td>Pendidikan Formal</td>
+                        </tr>
+                        <tr>
+                            <td>2019 - 2022</td>
+                            <td>SMA Negeri 21 Jakarta</td>
+                            <td>Pendidikan Formal</td>
+                        </tr>
+                        <tr>
+                            <td>2022 - Present</td>
+                            <td>BINUS UNIVERSITY</td>
+                            <td>Pendidikan Formal</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="skills">
+                    <p>Untuk saat ini, software yang saya kuasai diantaranya:</p>
+                        <ul class="softwareList">
+                            <li>Visual Studio Code</li>
+                            <li>Eclipse IDE</li>
+                            <li>Visual Paradigm</li>
+                            <li>App diagram (<a href="https://app.diagrams.net/" target="_blank">Klik Link disini</a>)</li>
+                        </ul>
+                    <p>Selain itu, bahasa pemograman / programming language yang saya kuasai, diantaranya:</p>
+                        <ul>
+                            <li>C</li>
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java</li>
+                        </ul>
+                </div>
+            </section>
+        </section>
+        <section class="portoKu">
+            <h1>Portofolio</h1>
+            <p>Beberapa project yang saya pernah kerjakan</p>
+        </section>
+        <section class="kontakAja" id="contact">
+            <section class="hubAja">
+                <h1>Contact <span>Us</span></h1>
+                <form action="https://bncc.net" method="post">
+                    <div class="nama">
+                        <label for="namaLengkap">Name</label> <br>
+                        <input type="text" placeholder="Please input your full name" id="namaLengkap" autocomplete="off">
+                    </div>
+                    <div class="e-address">
+                        <label for="email">Email : </label> <br> 
+                        <input type="email" placeholder="****@gmail.com" id="email" autocomplete="off">
+                    </div>
+                    <div class="linkedIn">
+                        <label for="linkedIn">LinkedIn : </label> <br>
+                        <input type="text" placeholder="Please input your LinkedIn URL here" id="linkedIn" autocomplete="off">
+                    </div>
+                    <div class="komentar">
+                        <label for="comment">Comment : </label> <br>
+                        <textarea id="comment" rows="4" placeholder="Please leave your comment to improve our UX and WebDev,
+Appreciate any input from you guys, thanks!"></textarea>
+                    </div>
+                    <div class="reset-submit">
+                        <button type="submit">Register</button>
+                        <button type="reset">Clear & reset</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </body>
+</html>
